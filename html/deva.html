@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devaki </title>
+    <link rel="stylesheet" href="./dev.css">
+    <script src="https://kit.fontawesome.com/0bcdcd5cc6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+    
+           
+                <ul>
+                   
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">occupation</a></li>
+                    <li><a href="#">protfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> UI/UX Designer</p>
+                <h1>Hi ,I'm<span>devaki<br></span> from chennai</h1>
+            </div>
+            
+        </div>
+
+    </div>
+    <!----------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> <img src="./devaki.png"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate about levelarging technology to drive innovation and create impactful solutions,I am a proctive learner,keeping myself updated with the latest trends and advancements in the tech industry.with excellent communication skills,I adeptly convey technical ideas in a clear and accessible manner</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                        <p class="tab-links" onclick="opentab('Certification', event)">Certification</p>
+                    </div>
+                
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>designing web interfaces</li>
+                            <li><span>web developer</span><br>web development</li>
+                        </ul>
+                    </div>
+                
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-current</span><br>Studying at SA Engineering collegeB.E Electronics and communication engineering 7.94cgpa</li>
+                            <li><span>HSC 2020-2021</span><br>Grace  matriculartion higher secondary school chennai 75%</li>
+                            <li><span>SSLC 2018-2019</span><br>Ganthi Memorial  higher secondary school chennai 80%</li>
+                        </ul>
+                    </div>
+                
+                    <div class="tab-contents" id="Certification">
+                        <ul>
+                            <li><span>Traiso</span><br>UI/UX design</li>
+                            <li><span>Great learning</span><br>Html,Css</li>
+                            <li><span>Internship</span><br>Traiso</li>
+                        </ul>
+                    </div>
+                
+
+                    </div>
+                </div>
+                <div class="about-col-3"></div>
+            </div>
+
+        </div>
+    </div>
+    <!---------services------>
+    <div id="services">
+        <div class="container"> 
+            <h1 class="sub-title">My services</h1>
+            <div class="services list"> 
+                <div>
+                    <i class="fa-solid fa-code"></i>
+
+                    <h2> web Design</h2>
+                    <p> web design is an excting field where you can bring ideas to life on the internet</p>
+                   <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI\UX designer</h2>
+                    <p> web design is an excting field where you can bring ideas to life on the internet</p>
+                   <a href="#">learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="protfolio">
+        <div class ="container">
+            <h2 class="sub-title">career objective</h2>
+            <p>As a B.E(Electronics and communication) student, my career objective is to secure a challenging and rewarding position <br> in the field of software development or information technology, <br>where I can apply my knowledge in programming and work with a dynamic team. I am determined to play an integral role in driving positive change and making a meaningful impact in the world of technology.</p>
+
+        </div>
+
+    </div>
+    <div id =" contact">
+        <div class="container">
+           <div class="row">
+            <div class="contact-left">
+<h1 class="sub-title"> contact me</h1>
+<p><i class="fa-solid fa-paper-plane"></i>devakiu97@gmail.com</p>
+<p> <i class="fa-solid fa-phone"></i>6379313319</p>
+<div class="social-icons">
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/devaki-u-5268a5275"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+<a href="" class="btn btn2">download cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name"placeholder="enter your name" required>
+                    <input type="text" name="email"placeholder="your email" required>
+                    <textarea name="message" rows="6"placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit
+
+                    </button>
+            </form>
+
+            </div>
+
+           </div> 
+        </div>
+
+    </div>
+
+    <style>
+        .services.list {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .services.list > div {
+            /* Optional: Adjust width or other styles for individual divs */
+            flex: 1; /* This will make the divs take up equal space */
+            margin: 10px; /* Optional margin between divs */
+        }
+    </style>
+
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname, event) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
